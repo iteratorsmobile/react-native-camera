@@ -1800,6 +1800,7 @@ BOOL _sessionInterrupted = NO;
                     result[@"uri"] = mirroredURL.absoluteString;
                     resolveBlock();
                 }];
+                [self cleanupCamera];
                 return;
             }
         }
